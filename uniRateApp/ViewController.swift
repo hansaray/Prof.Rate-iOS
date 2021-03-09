@@ -1,0 +1,321 @@
+//
+//  ViewController.swift
+//  uniRateApp
+//
+//  Created by serhan özyılmaz on 2020. 09. 29..
+//
+
+import UIKit
+import Firebase
+import GoogleMobileAds
+
+class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource, GADBannerViewDelegate {
+
+    @IBOutlet private weak var cityName: UITextField!
+    @IBOutlet private weak var uniName: UITextField!
+    @IBOutlet private weak var fieldName: UITextField!
+    @IBOutlet private weak var profName: UITextField!
+    @IBOutlet private weak var scrollView: UIScrollView!
+    @IBOutlet private weak var info: UIButton!
+    @IBOutlet private weak var statsLogo: UIBarButtonItem!
+    private var cityList: [String] = [String]()
+    private var uniList: [String] = [String]()
+    private var fieldList: [String] = [String]()
+    private var uniLimitedList: [String] = [String]()
+    private var fieldLimitedList: [String] = [String]()
+    private var selectedCity : String?
+    private var selectedUni : String?
+    private var selectedField : String?
+    private var ref = DatabaseReference()
+    private var scrollSize = CGFloat()
+    private let banner = GADBannerView()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        initAd()
+        ref = Database.database().reference()
+        cityList = [NSLocalizedString("city_name", comment: "")]
+        uniList = [NSLocalizedString("uni_name", comment: "")]
+        fieldList = [NSLocalizedString("field_name", comment: "")]
+        setTxtFieldBorders()
+        createPickerView()
+        dismissPickerView()
+        setSpinners()
+        scrollSize = scrollView.frame.size.height
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DismissKeyboard))
+        view.addGestureRecognizer(tap)
+        info.setTitle("Önemli: Arama sonuçlarında daha iyi bir sonuçla karşılaşmak için istastik sayfasına bakmanızı öneriyoruz!(Sağ üstteki simge)", for: .normal)
+        info.titleLabel?.numberOfLines = 0;
+        info.titleLabel!.lineBreakMode = NSLineBreakMode.byWordWrapping
+        let textSize = info.title(for: .normal)?.size(width: view.frame.width - 30)
+        info.heightAnchor.constraint(equalToConstant: textSize?.height ?? 10).isActive = true
+        statsLogo.image = UIImage.init(named: "stats")?.withRenderingMode(.alwaysOriginal)
+    }
+    
+    private func initAd() {
+        banner.adSize =  GADAdSizeFromCGSize(CGSize(width: 320, height: 100))
+        banner.frame = CGRect(x: 0, y: view.frame.size.height, width: 320, height: 100)
+        banner.adUnitID = "ca-app-pub-4004348027309516/4681418838"
+        banner.rootViewController = self
+        banner.delegate  = self
+        view.addSubview(banner)
+        banner.load(GADRequest())
+        
+    }
+    
+    @IBAction func searchPressed(_ sender: UIButton) {
+        let prof_name = profName.text
+        if !(prof_name?.isEmpty ?? true) || !(selectedCity?.isEmpty ?? true) || !(selectedUni?.isEmpty ?? true) || !(selectedField?.isEmpty ?? true) {
+            self.performSegue(withIdentifier: "mainToSearchSegue", sender: self)
+        } else {
+            let alertController = UIAlertController(title: NSLocalizedString("error", comment: ""), message: NSLocalizedString("choose_one", comment: ""), preferredStyle: .alert)
+            self.present(alertController, animated: true, completion: nil)
+            let when = DispatchTime.now() + 1
+            DispatchQueue.main.asyncAfter(deadline: when){
+                alertController.dismiss(animated: true, completion: nil)
+            }
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "mainToSearchSegue" {
+            let vc = segue.destination as? SearchVC
+            vc?.cityName = CityName().nameFix(name: selectedCity ?? "")
+            vc?.uniName = selectedUni ?? ""
+            vc?.fieldName = selectedField ?? ""
+            vc?.profName = profName.text ?? ""
+        }
+    }
+    
+    @objc private func DismissKeyboard(){
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        scrollView.contentSize = CGSize(width: self.scrollView.frame.size.width, height: (scrollView.frame.size.height + 10))// To be more specific, I have used multiple textfields so wanted to scroll to the end.So have given the constant 300.
+    }
+
+    func textFieldDidBeginEditing(_ textField:UITextField) {
+        if textField.tag == 3 {
+            self.scrollView.setContentOffset(textField.frame.origin, animated: true)
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        self.scrollView.setContentOffset(.zero, animated: true)
+        self.scrollView.contentSize = CGSize(width: self.scrollView.frame.size.width, height: (scrollSize))
+    }
+    
+    @objc fileprivate func setSpinners(){
+        ref.child("Cities").observeSingleEvent(of: .value) { (snapshot,error) in
+            if let error = error {
+                print("error",error)
+                return
+            }
+            snapshot.children.forEach { (child) in
+                let snap = child as! DataSnapshot
+                self.cityList.append(CityName().nameFix(name: snap.key))
+            }
+            
+        }
+        ref.child("Universities").observeSingleEvent(of: .value) { (snapshot,error) in
+            if let error = error {
+                print("error",error)
+                return
+            }
+            snapshot.children.forEach { (child) in
+                let snap = child as! DataSnapshot
+                self.uniList.append(snap.key)
+            }
+            
+        }
+        ref.child("Faculties").observeSingleEvent(of: .value) { (snapshot,error) in
+            if let error = error {
+                print("error",error)
+                return
+            }
+            snapshot.children.forEach { (child) in
+                let snap = child as! DataSnapshot
+                self.fieldList.append(snap.key)
+            }
+        }
+    }
+    
+    @objc fileprivate func setTxtFieldBorders() {
+        cityName.delegate = self
+        cityName.tintColor = .white
+        cityName.layer.cornerRadius = 8.0
+        cityName.layer.masksToBounds = true
+        cityName.layer.borderColor = UIColor(named: "appBlueColor")?.cgColor
+        cityName.layer.borderWidth = 1.0
+        
+        uniName.delegate = self
+        uniName.tintColor = .white
+        uniName.layer.cornerRadius = 8.0
+        uniName.layer.masksToBounds = true
+        uniName.layer.borderColor = UIColor(named: "appBlueColor")?.cgColor
+        uniName.layer.borderWidth = 1.0
+        
+        fieldName.delegate = self
+        fieldName.tintColor = .white
+        fieldName.layer.cornerRadius = 8.0
+        fieldName.layer.masksToBounds = true
+        fieldName.layer.borderColor = UIColor(named: "appBlueColor")?.cgColor
+        fieldName.layer.borderWidth = 1.0
+        
+        profName.delegate = self
+        profName.tag = 3
+        profName.layer.cornerRadius = 8.0
+        profName.layer.masksToBounds = true
+        profName.layer.borderColor = UIColor(named: "appBlueColor")?.cgColor
+        profName.layer.borderWidth = 1.0
+    }
+    
+     private func createPickerView() {
+        let pickerView = UIPickerView()
+        let pickerView2 = UIPickerView()
+        let pickerView3 = UIPickerView()
+        pickerView.delegate = self
+        pickerView2.delegate = self
+        pickerView3.delegate = self
+        cityName.inputView = pickerView
+        fieldName.inputView = pickerView2
+        uniName.inputView = pickerView3
+        
+    }
+        
+    private func dismissPickerView() {
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        let button = UIBarButtonItem(title: NSLocalizedString("done", comment: ""), style: .plain, target: self, action: #selector(self.action))
+        toolBar.setItems([button], animated: true)
+        toolBar.isUserInteractionEnabled = true
+        cityName.inputAccessoryView = toolBar
+        uniName.inputAccessoryView = toolBar
+        fieldName.inputAccessoryView = toolBar
+    }
+    
+    @objc private func action() {
+          view.endEditing(true)
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        if cityName.isFirstResponder{
+            return cityList.count
+        }else if uniName.isFirstResponder{
+            return uniList.count
+        }else {
+            return fieldList.count
+        }
+    }
+        
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        if cityName.isFirstResponder{
+            return cityList[row]
+        }else if uniName.isFirstResponder{
+            return uniList[row]
+        }else if fieldName.isFirstResponder{
+            return fieldList[row]
+        }else {
+            return ""
+        }
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if cityName.isFirstResponder{
+            selectedCity = cityList[row]
+            cityName.text = selectedCity
+            selectedUni = ""
+            uniName.text = selectedUni
+            selectedField = ""
+            fieldName.text = selectedField
+            if selectedCity?.isEmpty ?? true || selectedCity?.elementsEqual(NSLocalizedString("city_name", comment: "")) ?? false {
+                //uni, field selection = 0
+                selectedCity = ""
+                cityName.text = selectedCity
+                if !uniLimitedList.isEmpty {
+                    uniList.removeAll()
+                    uniList.append(contentsOf: uniLimitedList)
+                }
+            }else {
+                setUniLimitedList(city: selectedCity ?? "")
+            }
+        }else if uniName.isFirstResponder{
+            selectedUni = uniList[row]
+            uniName.text = selectedUni
+            selectedField = ""
+            fieldName.text = selectedField
+            if selectedUni?.isEmpty ?? true || selectedUni?.elementsEqual(NSLocalizedString("uni_name", comment: "")) ?? false {
+                //field selection = 0
+                selectedUni = ""
+                uniName.text = selectedUni
+                if !fieldLimitedList.isEmpty {
+                    fieldList.removeAll()
+                    fieldList.append(contentsOf: fieldLimitedList)
+                }
+            }else {
+                setFieldLimitedList(uni: selectedUni ?? "")
+            }
+        }else if fieldName.isFirstResponder{
+            selectedField = fieldList[row]
+            fieldName.text = selectedField
+            if selectedField?.isEmpty ?? true || selectedField?.elementsEqual(NSLocalizedString("field_name", comment: "")) ?? false {
+                selectedField = ""
+                fieldName.text = selectedField
+            }
+        }
+    }
+    
+    @objc fileprivate func setUniLimitedList(city : String) {
+        let n_city = CityName().nameFix(name: city)
+        if uniLimitedList.isEmpty {
+            uniLimitedList.append(contentsOf: uniList)
+        }
+        uniList.removeAll()
+        uniList = [NSLocalizedString("uni_name", comment: "")]
+        ref.child("Cities").child(n_city).observeSingleEvent(of: .value) { (snapshot,error) in
+            if let error = error {
+                print("error",error)
+                return
+            }
+            snapshot.children.forEach { (child) in
+                let snap = child as! DataSnapshot
+                if !snap.key.elementsEqual("All professors") {
+                    self.uniList.append(snap.key)
+                }
+            }
+            
+        }
+    }
+    
+    @objc fileprivate func setFieldLimitedList(uni : String) {
+        if fieldLimitedList.isEmpty {
+            fieldLimitedList.append(contentsOf: fieldList)
+        }
+        fieldList.removeAll()
+        fieldList = [NSLocalizedString("field_name", comment: "")]
+        ref.child("Universities").child(uni).observeSingleEvent(of: .value) { (snapshot,error) in
+            if let error = error {
+                print("error",error)
+                return
+            }
+            snapshot.children.forEach { (child) in
+                let snap = child as! DataSnapshot
+                if !snap.key.elementsEqual("All professors") {
+                    self.fieldList.append(snap.key)
+                }
+            }
+            
+        }
+    }
+    
+}

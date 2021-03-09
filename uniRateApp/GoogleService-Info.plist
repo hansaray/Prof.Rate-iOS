@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>56599474640-9ju2bcn0eq6aknhevpct77h1i7rghs5i.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.56599474640-9ju2bcn0eq6aknhevpct77h1i7rghs5i</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>56599474640-nlvq22ftgr73uc0s0seoaj8utf4ak32k.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDSDhYXWUF0ufnfGesxrTgJQpMi4ukl89Y</string>
+	<key>GCM_SENDER_ID</key>
+	<string>56599474640</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.simplasolutions.appturnedtables</string>
+	<key>PROJECT_ID</key>
+	<string>unirateapp</string>
+	<key>STORAGE_BUCKET</key>
+	<string>unirateapp.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<true/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:56599474640:ios:2ef82303c28f152b1b09d5</string>
+	<key>DATABASE_URL</key>
+	<string>https://unirateapp.firebaseio.com</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-4004348027309516~1188896388</string>
+</dict>
+</plist>

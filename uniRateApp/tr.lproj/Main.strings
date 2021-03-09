@@ -1,0 +1,669 @@
+/*Update v1.2*/
+
+/* Class = "UIButton"; normalTitle = "Click to add and rate a professor"; ObjectID = "6lp-mM-iUE"; */
+"6lp-mM-iUE.normalTitle" = "Profesör ekleyip, oylamak için tıklayın";
+
+/* Class = "UINavigationItem"; title = "Add Professor"; ObjectID = "pQI-it-EDO"; */
+"pQI-it-EDO.title" = "Profesör Ekle";
+
+/* Class = "UIBarButtonItem"; title = "Done"; ObjectID = "xmY-dj-R3B"; */
+"xmY-dj-R3B.title" = "Ekle";
+
+/* Class = "UILabel"; text = "Please fill the professor name in 'Name Surname' form. After adding proccess you can rate the professor. If the name is inappropriate, it will be deleted!"; ObjectID = "m5a-zi-EqD"; */
+"m5a-zi-EqD.text" = "Lütfen profesör adını 'İsim Soyisim' şeklinde doldurunuz. Profesör ismini ekledikten hemen sonra oylama yapabilirsiniz. Profesör adı kontrolden geçtikten sonra eğer uygunsuz ise silinecektir!";
+
+/* Class = "UILabel"; text = "City Name:"; ObjectID = "5Ej-UA-w8f"; */
+"5Ej-UA-w8f.text" = "Şehir Adı:";
+
+/* Class = "UITextField"; placeholder = "City name"; ObjectID = "n8W-Ov-5OH"; */
+"n8W-Ov-5OH.placeholder" = "Şehir adı";
+
+/* Class = "UILabel"; text = "University Name:"; ObjectID = "qxo-2T-mtG"; */
+"qxo-2T-mtG.text" = "Üniversite Adı:";
+
+/* Class = "UITextField"; placeholder = "University name"; ObjectID = "nDW-kK-c5v"; */
+"nDW-kK-c5v.placeholder" = "Üniversite adı";
+
+/* Class = "UILabel"; text = "Faculty Name:"; ObjectID = "2oO-gr-DPx"; */
+"2oO-gr-DPx.text" = "Fakülte Adı:";
+
+/* Class = "UITextField"; placeholder = "Faculty name"; ObjectID = "aXh-DP-bH4"; */
+"aXh-DP-bH4.placeholder" = "Fakülte adı";
+
+/* Class = "UILabel"; text = "Gender:"; ObjectID = "2VB-Fj-Hy1"; */
+"2VB-Fj-Hy1.text" = "Cinsiyet:";
+
+/* Class = "UITextField"; placeholder = "Gender"; ObjectID = "94r-0w-7Mj"; */
+"94r-0w-7Mj.placeholder" = "Cinsiyet";
+
+/* Class = "UILabel"; text = "Title:"; ObjectID = "cJm-5v-lwP"; */
+"cJm-5v-lwP.text" = "Ünvan:";
+
+/* Class = "UITextField"; placeholder = "Title"; ObjectID = "G3Q-hZ-JGl"; */
+"G3Q-hZ-JGl.placeholder" = "Ünvan";
+
+/* Class = "UILabel"; text = "Professor Name:"; ObjectID = "j4N-Sh-92r"; */
+"j4N-Sh-92r.text" = "Profesör Adı:";
+
+/* Class = "UITextField"; placeholder = "Professor name"; ObjectID = "YGY-7w-TeR"; */
+"YGY-7w-TeR.placeholder" = "Profesör adı";
+
+/* Class = "UIButton"; normalTitle = "Add professor"; ObjectID = "6ebD-82-iLk"; */
+"ebD-82-iLk.normalTitle" = "Profesör ekle";
+
+/* Class = "UIButton"; normalTitle = "Add professor"; ObjectID = "mIi-cM-PBl"; */
+"mIi-cM-PBl.normalTitle" = "Aradığın profesörü bulamadın mı? Eklemek için tıkla";
+
+/* Class = "UILabel"; text = "No result for this professor!"; ObjectID = "TYo-MB-IHq"; */
+"TYo-MB-IHq.text" = "Aradığınız profesörü sistemimizde bulamadık!";
+
+/* Class = "UIButton"; normalTitle = "Click to add professor and rate immediately"; ObjectID = "ffz-oA-w7N"; */
+"ffz-oA-w7N.normalTitle" = "Profesör ekleyip, oylamak için tıklayın";
+
+/* Class = "UILabel"; text = "There is no rating with comment for this professor"; ObjectID = "hwV-fJ-6ZS"; */
+"hwV-fJ-6ZS.text" = "Bu profesör için yapılan bir yorumlu oylama yok";
+
+/* Class = "UIButton"; normalTitle = "Click to give first rating with comment"; ObjectID = "Juv-gh-4h8"; */
+"Juv-gh-4h8.normalTitle" = "İlk yorumlu oylama yapan sen olmak için tıkla!";
+
+/* Class = "UILabel"; text = "There is no comment"; ObjectID = "Kf2-9R-4VK"; */
+"Kf2-9R-4VK.text" = "Bu kullanıcının yaptığı bir oylama yok";
+
+/*-------------------------------------------------------------------------------------------*/
+
+/* Class = "UIButton"; normalTitle = "City"; ObjectID = "HR9-qK-1Ht"; */
+"HR9-qK-1Ht.normalTitle" = "Şehir";
+
+/* Class = "UILabel"; text = "Difficulty"; ObjectID = "GkL-U9-9H1"; */
+"GkL-U9-9H1.text" = "Zorluk";
+
+/* Class = "UINavigationItem"; title = "Statistics"; ObjectID = "0GA-lf-go5"; */
+"0GA-lf-go5.title" = "İstatistikler";
+
+/* Class = "UILabel"; text = "Faculty name"; ObjectID = "0mt-aV-AZA"; */
+"0mt-aV-AZA.text" = "Bölüm Adı";
+
+/* Class = "UITextField"; placeholder = "Professor name"; ObjectID = "1QE-AT-hXS"; */
+"1QE-AT-hXS.placeholder" = "Profesör Adı";
+
+/* Class = "UILabel"; text = "Textbook"; ObjectID = "1Qv-sH-7cH"; */
+"1Qv-sH-7cH.text" = "Kitap";
+
+/* Class = "UILabel"; text = "Helpfulness"; ObjectID = "2Ij-gH-0I6"; */
+"2Ij-gH-0I6.text" = "Yardımsever";
+
+/* Class = "UILabel"; text = "Attendance"; ObjectID = "2tL-U7-PgS"; */
+"2tL-U7-PgS.text" = "Derse Katılım";
+
+/* Class = "UILabel"; text = "Önemli: Liste veya word/excel dosyası şeklinde göndermeyi düşünüyorsanız, turnedtablespublic@gmail.com adresine gönderebilirsiniz"; ObjectID = "3m9-o8-TlC"; */
+"3m9-o8-TlC.text" = "Önemli: Liste veya word/excel dosyası şeklinde göndermeyi düşünüyorsanız, turnedtablespublic@gmail.com adresine gönderebilirsiniz";
+
+/* Class = "UINavigationItem"; title = "Rate Professor"; ObjectID = "3wp-ai-PMP"; */
+"3wp-ai-PMP.title" = "Profesör Oyla";
+
+/* Class = "UILabel"; text = "Attendance"; ObjectID = "3zd-cy-TUL"; */
+"3zd-cy-TUL.text" = "Derse Katılım";
+
+/* Class = "UILabel"; text = "Attendance"; ObjectID = "4Ce-Ug-gZi"; */
+"4Ce-Ug-gZi.text" = "Derse Katılım";
+
+/* Class = "UIButton"; normalTitle = "University"; ObjectID = "4EX-Zc-ZWM"; */
+"4EX-Zc-ZWM.normalTitle" = "Üniversite";
+
+/* Class = "UIButton"; selectedTitle = "University"; ObjectID = "4EX-Zc-ZWM"; */
+"4EX-Zc-ZWM.selectedTitle" = "Üniversite";
+
+/* Class = "UILabel"; text = "City Name:"; ObjectID = "4Jj-ZZ-ua6"; */
+"4Jj-ZZ-ua6.text" = "Şehir Adı:";
+
+/* Class = "UILabel"; text = "Recevied Dislikes"; ObjectID = "4d1-ye-BMu"; */
+"4d1-ye-BMu.text" = "Gelen Beğenmedimler";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "4z1-Qx-QRe"; */
+"4z1-Qx-QRe.text" = "0";
+
+/* Class = "UILabel"; text = "3.0"; ObjectID = "56n-ch-QVY"; */
+"56n-ch-QVY.text" = "3.0";
+
+/* Class = "UIButton"; normalTitle = "City"; ObjectID = "5Ij-7V-rsI"; */
+"5Ij-7V-rsI.normalTitle" = "Şehir";
+
+/* Class = "UIButton"; selectedTitle = "City"; ObjectID = "5Ij-7V-rsI"; */
+"5Ij-7V-rsI.selectedTitle" = "Şehir";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "5Jv-Uy-8O8"; */
+"5Jv-Uy-8O8.text" = "Label";
+
+/* Class = "UILabel"; text = "University Name:"; ObjectID = "5o1-ys-Un7"; */
+"5o1-ys-Un7.text" = "Üniversite Adı:";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "6BV-yY-0LO"; */
+"6BV-yY-0LO.text" = "0";
+
+/* Class = "UIBarButtonItem"; title = "Done"; ObjectID = "6HD-w4-2Jn"; */
+"6HD-w4-2Jn.title" = "Bitti";
+
+/* Class = "UIButton"; normalTitle = "Add Comment"; ObjectID = "6MY-as-IXu"; */
+"6MY-as-IXu.normalTitle" = "Yorum ekle";
+
+/* Class = "UILabel"; text = "Recevied Dislikes"; ObjectID = "6Yh-EA-CEs"; */
+"6Yh-EA-CEs.text" = "Gelen Beğenmedimler";
+
+/* Class = "UITextField"; placeholder = "University name"; ObjectID = "6dW-nF-3bA"; */
+"6dW-nF-3bA.placeholder" = "Üniversite adı";
+
+/* Class = "UILabel"; text = "Faculty name"; ObjectID = "7aB-Gj-hse"; */
+"7aB-Gj-hse.text" = "Bölüm adı";
+
+/* Class = "UIButton"; normalTitle = "Have an account ? Login"; ObjectID = "8TY-8Y-ctn"; */
+"8TY-8Y-ctn.normalTitle" = "Hesabın mı var ? Giriş Yap";
+
+/* Class = "UINavigationItem"; title = "Reset Password"; ObjectID = "8yf-ZP-DK8"; */
+"8yf-ZP-DK8.title" = "Şifreni Sıfırla";
+
+/* Class = "UILabel"; text = "Likes"; ObjectID = "95T-7U-orJ"; */
+"95T-7U-orJ.text" = "Beğeniler";
+
+/* Class = "UITextField"; placeholder = "Faculty name"; ObjectID = "9Lv-eY-xCB"; */
+"9Lv-eY-xCB.placeholder" = "Bölüm adı";
+
+/* Class = "UILabel"; text = "Lecture"; ObjectID = "9We-KB-f2t"; */
+"9We-KB-f2t.text" = "Ders Anlatım";
+
+/* Class = "UILabel"; text = "Average"; ObjectID = "9gQ-x1-Btw"; */
+"9gQ-x1-Btw.text" = "Ortalama";
+
+/* Class = "UILabel"; text = "Difficulty"; ObjectID = "9sN-lx-4a8"; */
+"9sN-lx-4a8.text" = "Zorluk";
+
+/* Class = "UILabel"; text = "Attendance"; ObjectID = "Ayp-qU-s2r"; */
+"Ayp-qU-s2r.text" = "Derse Katılım";
+
+/* Class = "UILabel"; text = "30"; ObjectID = "AB2-iS-KFH"; */
+"AB2-iS-KFH.text" = "30";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "AaO-l4-2Zs"; */
+"AaO-l4-2Zs.text" = "0";
+
+/* Class = "UILabel"; text = "Attendance"; ObjectID = "BEn-qM-0j9"; */
+"BEn-qM-0j9.text" = "Derse Katılım";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "BVI-c4-ZnK"; */
+"BVI-c4-ZnK.text" = "0";
+
+/* Class = "UILabel"; text = "University Name:"; ObjectID = "C2b-0h-RDQ"; */
+"C2b-0h-RDQ.text" = "Üniversite Adı:";
+
+/* Class = "UILabel"; text = "3.0"; ObjectID = "C8c-Im-wjR"; */
+"C8c-Im-wjR.text" = "3.0";
+
+/* Class = "UINavigationItem"; title = "Rating"; ObjectID = "DBJ-od-5t6"; */
+"DBJ-od-5t6.title" = "Oylama";
+
+/* Class = "UIButton"; normalTitle = "Change password"; ObjectID = "DGm-Qi-0QX"; */
+"DGm-Qi-0QX.normalTitle" = "Şifreni değiştir";
+
+/* Class = "UILabel"; text = "Likes"; ObjectID = "DxH-n5-IL9"; */
+"DxH-n5-IL9.text" = "Beğeniler";
+
+/* Class = "UILabel"; text = "Helpfulness"; ObjectID = "DRH-Hw-nip"; */
+"DRH-Hw-nip.text" = "Yardımsever";
+
+/* Class = "UINavigationItem"; title = "Notifications"; ObjectID = "ELw-hH-ZqB"; */
+"ELw-hH-ZqB.title" = "Bildirimler";
+
+/* Class = "UITextField"; placeholder = "Faculty name"; ObjectID = "Ele-mc-nn1"; */
+"Ele-mc-nn1.placeholder" = "Bölüm adı";
+
+/* Class = "UILabel"; text = "Helpfulness"; ObjectID = "Ffm-5h-Due"; */
+"Ffm-5h-Due.text" = "Yardımsever";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "Flu-1h-bWN"; */
+"Flu-1h-bWN.text" = "0";
+
+/* Class = "UILabel"; text = "Not Mandatory"; ObjectID = "FnU-oC-KBg"; */
+"FnU-oC-KBg.text" = "Zorunlu değil";
+
+/* Class = "UIButton"; normalTitle = "Delete account"; ObjectID = "Fzh-2z-Qgi"; */
+"Fzh-2z-Qgi.normalTitle" = "Hesabını sil";
+
+/* Class = "UITextField"; placeholder = "Email address"; ObjectID = "GMD-mi-85F"; */
+"GMD-mi-85F.placeholder" = "Email adresi";
+
+/* Class = "UIBarButtonItem"; title = "Done"; ObjectID = "HNq-jp-UUn"; */
+"HNq-jp-UUn.title" = "Bitti";
+
+/* Class = "UILabel"; text = "University Name:"; ObjectID = "HSx-PQ-JPP"; */
+"HSx-PQ-JPP.text" = "Üniversite Adı:";
+
+/* Class = "UILabel"; text = "Password:"; ObjectID = "Hgv-55-Q0b"; */
+"Hgv-55-Q0b.text" = "Şifre:";
+
+/* Class = "UITextField"; placeholder = "Username or email address"; ObjectID = "HzZ-Fg-1JN"; */
+"HzZ-Fg-1JN.placeholder" = "Kullanıcı adı veya email adresi";
+
+/* Class = "UILabel"; text = "Average"; ObjectID = "IHo-4D-6Yo"; */
+"IHo-4D-6Yo.text" = "Ortalama";
+
+/* Class = "UINavigationItem"; title = "Contact Us"; ObjectID = "ILM-ib-5gN"; */
+"ILM-ib-5gN.title" = "Bize Ulaşın";
+
+/* Class = "UILabel"; text = "Not Mandatory"; ObjectID = "Ie0-RY-1zT"; */
+"Ie0-RY-1zT.text" = "Zorunlu değil";
+
+/* Class = "UILabel"; text = "Total Ratings"; ObjectID = "Ik3-Yr-GAZ"; */
+"Ik3-Yr-GAZ.text" = "Toplam Oylama";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "JPO-Ft-xnt"; */
+"JPO-Ft-xnt.text" = "0";
+
+/* Class = "UILabel"; text = "Received Likes"; ObjectID = "Jj8-MJ-ufJ"; */
+"Jj8-MJ-ufJ.text" = "Gelen Beğeniler";
+
+/* Class = "UILabel"; text = "3.0"; ObjectID = "KOd-sD-fv7"; */
+"KOd-sD-fv7.text" = "3.0";
+
+/* Class = "UILabel"; text = "Helpfulness"; ObjectID = "KTD-ts-sNb"; */
+"KTD-ts-sNb.text" = "Yardımsever";
+
+/* Class = "UIBarButtonItem"; title = "Done"; ObjectID = "KXp-lG-RVG"; */
+"KXp-lG-RVG.title" = "Bitti";
+
+/* Class = "UITextField"; placeholder = "Professor name"; ObjectID = "KbT-Fy-sXG"; */
+"KbT-Fy-sXG.placeholder" = "Profesör adı";
+
+/* Class = "UILabel"; text = "Difficulty"; ObjectID = "L0a-G6-SD0"; */
+"L0a-G6-SD0.text" = "Zorluk";
+
+/* Class = "UILabel"; text = "Textbook"; ObjectID = "LU0-GF-C0q"; */
+"LU0-GF-C0q.text" = "Kitap";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Lv8-Qp-OoX"; */
+"Lv8-Qp-OoX.text" = "Label";
+
+/* Class = "UILabel"; text = "Lecture"; ObjectID = "Lhy-RQ-gdt"; */
+"Lhy-RQ-gdt.text" = "Ders Anlatım";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "MES-Xy-o89"; */
+"MES-Xy-o89.placeholder" = "Şifre";
+
+/* Class = "UILabel"; text = "Profile preview"; ObjectID = "NeH-dk-G8j"; */
+"NeH-dk-G8j.text" = "Profil Önizlemesi";
+
+/* Class = "UIBarButtonItem"; title = "Done"; ObjectID = "Nht-qW-4Sv"; */
+"Nht-qW-4Sv.title" = "Bitti";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "O80-d4-jNT"; */
+"O80-d4-jNT.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Title"; ObjectID = "OM8-yi-bXS"; */
+"OM8-yi-bXS.placeholder" = "Ünvan";
+
+/* Class = "UILabel"; text = "Textbook"; ObjectID = "OWO-bt-9br"; */
+"OWO-bt-9br.text" = "Kitap";
+
+/* Class = "UILabel"; text = "University name"; ObjectID = "OoM-jp-uh4"; */
+"OoM-jp-uh4.text" = "Üniversite adı";
+
+/* Class = "UILabel"; text = "Average"; ObjectID = "OuG-iD-27g"; */
+"OuG-iD-27g.text" = "Ortalama";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "Ous-YO-0lg"; */
+"Ous-YO-0lg.text" = "0";
+
+/* Class = "UIButton"; normalTitle = "Reset"; ObjectID = "PXv-db-Er7"; */
+"PXv-db-Er7.normalTitle" = "Sıfırla";
+
+/* Class = "UILabel"; text = "3.0"; ObjectID = "Ppn-IT-Hm8"; */
+"Ppn-IT-Hm8.text" = "3.0";
+
+/* Class = "UILabel"; text = "Textbook"; ObjectID = "Pt3-PB-yIA"; */
+"Pt3-PB-yIA.text" = "Kitap";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "QO8-44-rzf"; */
+"QO8-44-rzf.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Username or email address"; ObjectID = "QvY-1y-FyX"; */
+"QvY-1y-FyX.placeholder" = "Kullanıcı adı veya email adresi";
+
+/* Class = "UIButton"; normalTitle = "My Dislikes"; ObjectID = "RMf-eI-ruf"; */
+"RMf-eI-ruf.normalTitle" = "Benim Beğenmediklerim";
+
+/* Class = "UIButton"; normalTitle = "My Likes"; ObjectID = "Rzi-Tg-LyL"; */
+"Rzi-Tg-LyL.normalTitle" = "Benim Beğendiklerim";
+
+/* Class = "UINavigationItem"; title = "Edit Profile"; ObjectID = "S4F-lC-PBs"; */
+"S4F-lC-PBs.title" = "Profili Düzenle";
+
+/* Class = "UILabel"; text = "Received Likes"; ObjectID = "SSM-rK-pe3"; */
+"SSM-rK-pe3.text" = "Received Likes";
+
+/* Class = "UILabel"; text = "Difficulty"; ObjectID = "SwN-2a-8lb"; */
+"SwN-2a-8lb.text" = "Zorluk";
+
+/* Class = "UITextField"; placeholder = "Faculty name"; ObjectID = "TWO-j8-0nX"; */
+"TWO-j8-0nX.placeholder" = "Bölüm adı";
+
+/* Class = "UILabel"; text = "Lecture"; ObjectID = "TWf-VS-aED"; */
+"TWf-VS-aED.text" = "Ders Anlatım";
+
+/* Class = "UILabel"; text = "Helpfulness"; ObjectID = "Tvl-mp-WzZ"; */
+"Tvl-mp-WzZ.text" = "Yardımsever";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "TwQ-sX-0ej"; */
+"TwQ-sX-0ej.text" = "0";
+
+/* Class = "UILabel"; text = "Helpfulness"; ObjectID = "UfD-pK-XPS"; */
+"UfD-pK-XPS.text" = "Yardımsever";
+
+/* Class = "UILabel"; text = "Helpfulness"; ObjectID = "UlK-sB-bcn"; */
+"UlK-sB-bcn.text" = "Yardımsever";
+
+/* Class = "UITextField"; placeholder = "Faculty name"; ObjectID = "VQc-HK-CZD"; */
+"VQc-HK-CZD.placeholder" = "Bölüm adı";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Vqw-Lk-8l3"; */
+"Vqw-Lk-8l3.text" = "Label";
+
+/* Class = "UILabel"; text = "Attendance"; ObjectID = "WvS-08-Yp2"; */
+"WvS-08-Yp2.text" = "Derse Katılım";
+
+/* Class = "UIBarButtonItem"; title = "Done"; ObjectID = "Wzp-tY-J37"; */
+"Wzp-tY-J37.title" = "Bitti";
+
+/* Class = "UILabel"; text = "Professor Name:"; ObjectID = "Xb8-86-Rf0"; */
+"Xb8-86-Rf0.text" = "Profesör Adı:";
+
+/* Class = "UILabel"; text = "Lecture"; ObjectID = "Xd2-96-ptI"; */
+"Xd2-96-ptI.text" = "Ders Anlatım";
+
+/* Class = "UINavigationItem"; title = "Add Filter"; ObjectID = "Xe2-36-c7s"; */
+"Xe2-36-c7s.title" = "Filtre Ekle";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "YFM-dk-8Y4"; */
+"YFM-dk-8Y4.text" = "0";
+
+/* Class = "UINavigationItem"; title = "Change Password"; ObjectID = "YMI-1i-5UN"; */
+"YMI-1i-5UN.title" = "Şifreni Değiştir";
+
+/* Class = "UILabel"; text = "Textbook"; ObjectID = "YSf-T5-2IK"; */
+"YSf-T5-2IK.text" = "Kitap";
+
+/* Class = "UILabel"; text = "Total Ratings"; ObjectID = "YUh-LL-yAh"; */
+"YUh-LL-yAh.text" = "Toplam Oylama";
+
+/* Class = "UINavigationItem"; title = "Login"; ObjectID = "Yit-wS-Upa"; */
+"Yit-wS-Upa.title" = "Giriş yap";
+
+/* Class = "UILabel"; text = "Lecture"; ObjectID = "a7O-1c-TgD"; */
+"a7O-1c-TgD.text" = "Ders Anlatım";
+
+/* Class = "UILabel"; text = "University Name:"; ObjectID = "aEh-MT-cWs"; */
+"aEh-MT-cWs.text" = "Üniversite Adı:";
+
+/* Class = "UILabel"; text = "Email Address:"; ObjectID = "aEo-fe-Yjz"; */
+"aEo-fe-Yjz.text" = "Email Adresi:";
+
+/* Class = "UILabel"; text = "Faculty Name:"; ObjectID = "aQv-wU-dLK"; */
+"aQv-wU-dLK.text" = "Bölüm Adı:";
+
+/* Class = "UIButton"; normalTitle = "Contact us"; ObjectID = "aay-yF-NOp"; */
+"aay-yF-NOp.normalTitle" = "Bize ulaşın";
+
+/* Class = "UILabel"; text = "Difficulty"; ObjectID = "agN-QM-smw"; */
+"agN-QM-smw.text" = "Zorluk";
+
+/* Class = "UILabel"; text = "Textbook"; ObjectID = "am5-Aj-54s"; */
+"am5-Aj-54s.text" = "Kitap";
+
+/* Class = "UITextField"; placeholder = "University name"; ObjectID = "av1-M5-PCm"; */
+"av1-M5-PCm.placeholder" = "Üniversite adı";
+
+/* Class = "UILabel"; text = "Difficulty"; ObjectID = "bbV-e2-ioD"; */
+"bbV-e2-ioD.text" = "Zorluk";
+
+/* Class = "UILabel"; text = "City Name:"; ObjectID = "bcN-yW-z9h"; */
+"bcN-yW-z9h.text" = "Şehir Adı:";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "c0p-Xh-SCA"; */
+"c0p-Xh-SCA.normalTitle" = "Giriş yap";
+
+/* Class = "UILabel"; text = "Not Mandatory"; ObjectID = "ck2-l3-9fG"; */
+"ck2-l3-9fG.text" = "Zorunlu değil";
+
+/* Class = "UIButton"; normalTitle = "Offer professor name"; ObjectID = "ckR-qJ-rDC"; */
+"ckR-qJ-rDC.normalTitle" = "Profesör ismi öner";
+
+/* Class = "UINavigationItem"; title = "Offer a professor name"; ObjectID = "ckf-gJ-0Ye"; */
+"ckf-gJ-0Ye.title" = "Profesör ismi öner";
+
+/* Class = "UIButton"; normalTitle = "App Language"; ObjectID = "cn2-EU-Knj"; */
+"cn2-EU-Knj.normalTitle" = "Uygulama Dili";
+
+/* Class = "UITextField"; placeholder = "Password (Again)"; ObjectID = "csN-MK-Kun"; */
+"csN-MK-Kun.placeholder" = "Şifre (Tekrardan)";
+
+/* Class = "UIButton"; normalTitle = "University"; ObjectID = "cxo-5E-rOJ"; */
+"cxo-5E-rOJ.normalTitle" = "Üniversite";
+
+/* Class = "UITextField"; placeholder = "City name"; ObjectID = "dEj-xB-gyc"; */
+"dEj-xB-gyc.placeholder" = "Şehir adı";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "dGw-Wh-gzs"; */
+"dGw-Wh-gzs.text" = "0";
+
+/* Class = "UILabel"; text = "20"; ObjectID = "dq9-B3-FR4"; */
+"dq9-B3-FR4.text" = "20";
+
+/* Class = "UITextField"; placeholder = "Current Password"; ObjectID = "dyR-X3-WTc"; */
+"dyR-X3-WTc.placeholder" = "Şu anki şifre";
+
+/* Class = "UILabel"; text = "Textbook"; ObjectID = "e3n-a7-njb"; */
+"e3n-a7-njb.text" = "Kitap";
+
+/* Class = "UILabel"; text = "University name"; ObjectID = "eSb-HY-xRU"; */
+"eSb-HY-xRU.text" = "Üniversite adı";
+
+/* Class = "UILabel"; text = "Not Mandatory"; ObjectID = "eeQ-aZ-fKK"; */
+"eeQ-aZ-fKK.text" = "Zorunlu değil";
+
+/* Class = "UILabel"; text = "Email:"; ObjectID = "erd-uW-aRe"; */
+"erd-uW-aRe.text" = "Email:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "g2R-c9-0oh"; */
+"g2R-c9-0oh.text" = "Label";
+
+/* Class = "UILabel"; text = "Faculty Name:"; ObjectID = "gGc-kl-WbD"; */
+"gGc-kl-WbD.text" = "Bölüm Adı:";
+
+/* Class = "UILabel"; text = "Professor Name:"; ObjectID = "gK6-Qj-kRF"; */
+"gK6-Qj-kRF.text" = "Profesör Adı:";
+
+/* Class = "UILabel"; text = "TurnedTables search professor"; ObjectID = "gXC-Xx-V8z"; */
+"gXC-Xx-V8z.text" = "TurnedTables profesörünü ara";
+
+/* Class = "UILabel"; text = "Attendance"; ObjectID = "giW-g2-xZ7"; */
+"giW-g2-xZ7.text" = "Derse Katılım";
+
+/* Class = "UITextField"; placeholder = "New Password Again"; ObjectID = "glB-oK-qGD"; */
+"glB-oK-qGD.placeholder" = "Yeni şifre tekrardan";
+
+/* Class = "UIButton"; normalTitle = "Add Filter"; ObjectID = "gmL-Xh-50X"; */
+"gmL-Xh-50X.normalTitle" = "Filtre Ekle";
+
+/* Class = "UIBarButtonItem"; title = "Done"; ObjectID = "h6h-rm-f18"; */
+"h6h-rm-f18.title" = "Bitti";
+
+/* Class = "UIButton"; normalTitle = "Sign up"; ObjectID = "h9B-0D-yeW"; */
+"h9B-0D-yeW.normalTitle" = "Kayıt ol";
+
+/* Class = "UINavigationItem"; title = "TurnedTables"; ObjectID = "hBi-bM-NGw"; */
+"hBi-bM-NGw.title" = "TurnedTables";
+
+/* Class = "UITextField"; placeholder = "University name"; ObjectID = "hSZ-W9-wbB"; */
+"hSZ-W9-wbB.placeholder" = "Üniversite adı";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "hup-AY-5U1"; */
+"hup-AY-5U1.title" = "Item";
+
+/* Class = "UILabel"; text = "Username:"; ObjectID = "i3S-3f-VsB"; */
+"i3S-3f-VsB.text" = "Kullanıcı Adı:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "iLU-pz-lTl"; */
+"iLU-pz-lTl.text" = "Label";
+
+/* Class = "UILabel"; text = "Difficulty"; ObjectID = "iUk-Vm-Dos"; */
+"iUk-Vm-Dos.text" = "Zorluk";
+
+/* Class = "UITextField"; placeholder = "University name"; ObjectID = "ieh-Ze-j6r"; */
+"ieh-Ze-j6r.placeholder" = "Üniversite Adı";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "ik9-X9-pPY"; */
+"ik9-X9-pPY.text" = "0";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "iuL-A3-gen"; */
+"iuL-A3-gen.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "iz6-rY-Ca1"; */
+"iz6-rY-Ca1.text" = "Label";
+
+/* Class = "UILabel"; text = "Average"; ObjectID = "j95-b3-jf8"; */
+"j95-b3-jf8.text" = "Ortalama";
+
+/* Class = "UILabel"; text = "3.0"; ObjectID = "jhj-XA-PYg"; */
+"jhj-XA-PYg.text" = "3.0";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "jqR-se-UyN"; */
+"jqR-se-UyN.text" = "0";
+
+/* Class = "UILabel"; text = "Helpfulness"; ObjectID = "kPa-Uo-VWt"; */
+"kPa-Uo-VWt.text" = "Yardımsever";
+
+/* Class = "UILabel"; text = "Average"; ObjectID = "lJL-zK-mJX"; */
+"lJL-zK-mJX.text" = "Ortlama";
+
+/* Class = "UILabel"; text = "10"; ObjectID = "lSL-es-PRn"; */
+"lSL-es-PRn.text" = "10";
+
+/* Class = "UINavigationItem"; title = "Professor Profile"; ObjectID = "ldC-0p-iay"; */
+"ldC-0p-iay.title" = "Profesör Profili";
+
+/* Class = "UINavigationItem"; title = "Sign up"; ObjectID = "m0f-WP-feT"; */
+"m0f-WP-feT.title" = "Kayıt ol";
+
+/* Class = "UIButton"; normalTitle = "Sign Out"; ObjectID = "m96-pr-Gz6"; */
+"m96-pr-Gz6.normalTitle" = "Çıkış yap";
+
+/* Class = "UIButton"; normalTitle = "Rating Details"; ObjectID = "mBg-H7-zXd"; */
+"mBg-H7-zXd.normalTitle" = "Oylama Detayları";
+
+/* Class = "UILabel"; text = "Sort"; ObjectID = "mOM-Gh-j0f"; */
+"mOM-Gh-j0f.text" = "Sırala";
+
+/* Class = "UILabel"; text = "5"; ObjectID = "nOw-Ax-gsU"; */
+"nOw-Ax-gsU.text" = "5";
+
+/* Class = "UINavigationItem"; title = "User Profile"; ObjectID = "nbW-lq-NSW"; */
+"nbW-lq-NSW.title" = "Kullanıcı Profili";
+
+/* Class = "UILabel"; text = "Textbook"; ObjectID = "nt2-O4-zGv"; */
+"nt2-O4-zGv.text" = "Kitap";
+
+/* Class = "UILabel"; text = "Lecture"; ObjectID = "o1Y-4Q-nhq"; */
+"o1Y-4Q-nhq.text" = "Ders Anlatım";
+
+/* Class = "UIButton"; normalTitle = "Faculty"; ObjectID = "qM1-AB-1ET"; */
+"qM1-AB-1ET.normalTitle" = "Fakülte";
+
+/* Class = "UIButton"; selectedTitle = "Faculty"; ObjectID = "qM1-AB-1ET"; */
+"qM1-AB-1ET.selectedTitle" = "Fakülte";
+
+/* Class = "UITextField"; placeholder = "Email address"; ObjectID = "qoV-dH-TVd"; */
+"qoV-dH-TVd.placeholder" = "Email adresi";
+
+/* Class = "UILabel"; text = "Average"; ObjectID = "qpz-Km-4JS"; */
+"qpz-Km-4JS.text" = "Ortalama";
+
+/* Class = "UINavigationItem"; title = "Search Result"; ObjectID = "rlH-yj-6c6"; */
+"rlH-yj-6c6.title" = "Arama Sonucu";
+
+/* Class = "UILabel"; text = "Dislikes"; ObjectID = "rsk-dn-ctc"; */
+"rsk-dn-ctc.text" = "Beğenmedimler";
+
+/* Class = "UILabel"; text = "Attendance"; ObjectID = "sW5-OV-JBp"; */
+"sW5-OV-JBp.text" = "Derse Katılım";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "scH-xD-TMc"; */
+"scH-xD-TMc.placeholder" = "Kullanıcı adı";
+
+/* Class = "UIBarButtonItem"; title = "Done"; ObjectID = "t6d-Qn-0aI"; */
+"t6d-Qn-0aI.title" = "Bitti";
+
+/* Class = "UILabel"; text = "Faculty Name:"; ObjectID = "tXu-bI-RZY"; */
+"tXu-bI-RZY.text" = "Bölüm Adı:";
+
+/* Class = "UIButton"; normalTitle = "Choose a photo"; ObjectID = "tce-Jn-cDd"; */
+"tce-Jn-cDd.normalTitle" = "Fotoğraf seç";
+
+/* Class = "UILabel"; text = "Ratings with Comments"; ObjectID = "trp-F5-mZl"; */
+"trp-F5-mZl.text" = "Yorumlu Oylamalar";
+
+/* Class = "UILabel"; text = "Difficulty"; ObjectID = "tww-Vn-l8L"; */
+"tww-Vn-l8L.text" = "Zorluk";
+
+/* Class = "UILabel"; text = "10"; ObjectID = "u3q-gt-gg5"; */
+"u3q-gt-gg5.text" = "10";
+
+/* Class = "UITextField"; placeholder = "New Password"; ObjectID = "uTf-v7-Tx3"; */
+"uTf-v7-Tx3.placeholder" = "Yeni Şifre";
+
+/* Class = "UIButton"; normalTitle = "Üniversiteler"; ObjectID = "uVq-wl-8RU"; */
+"uVq-wl-8RU.normalTitle" = "Üniversiteler";
+
+/* Class = "UILabel"; text = "Password (Again):"; ObjectID = "udw-1z-Jy3"; */
+"udw-1z-Jy3.text" = "Şifre (Tekrardan):";
+
+/* Class = "UILabel"; text = "3.0"; ObjectID = "ufm-sw-tDI"; */
+"ufm-sw-tDI.text" = "3.0";
+
+/* Class = "UILabel"; text = "Lecture"; ObjectID = "uhT-cg-gc4"; */
+"uhT-cg-gc4.text" = "Ders Anlatım";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "upA-OW-mki"; */
+"upA-OW-mki.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Forgot the password ?"; ObjectID = "urb-4M-lMn"; */
+"urb-4M-lMn.normalTitle" = "Şifreni mi unuttun ?";
+
+/* Class = "UIButton"; normalTitle = "Bölümler"; ObjectID = "uzU-fr-cgE"; */
+"uzU-fr-cgE.normalTitle" = "Bölümler";
+
+/* Class = "UIButton"; normalTitle = "My Ratings"; ObjectID = "vDO-w9-itg"; */
+"vDO-w9-itg.normalTitle" = "Benim Oylamalarım";
+
+/* Class = "UITextField"; placeholder = "City name"; ObjectID = "vfI-wZ-19h"; */
+"vfI-wZ-19h.placeholder" = "Şehir Adı";
+
+/* Class = "UIButton"; normalTitle = "Give Points"; ObjectID = "vtY-zJ-Mcr"; */
+"vtY-zJ-Mcr.normalTitle" = "Puanla";
+
+/* Class = "UIButton"; normalTitle = "Add Filter"; ObjectID = "wfp-jn-xsl"; */
+"wfp-jn-xsl.normalTitle" = "Filtre ekle";
+
+/* Class = "UILabel"; text = "Dislikes"; ObjectID = "xZf-Ai-hN4"; */
+"xZf-Ai-hN4.text" = "Beğenmedimler";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "xaA-pS-sQT"; */
+"xaA-pS-sQT.title" = "Ayarlar";
+
+/* Class = "UILabel"; text = "Faculty Name:"; ObjectID = "xhp-Sp-rDJ"; */
+"xhp-Sp-rDJ.text" = "Bölüm Adı:";
+
+/* Class = "UILabel"; text = "Lecture"; ObjectID = "y2h-2y-lmd"; */
+"y2h-2y-lmd.text" = "Ders Anlatım";
+
+/* Class = "UILabel"; text = "5.0"; ObjectID = "yDL-Io-f2c"; */
+"yDL-Io-f2c.text" = "5.0";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "znw-jJ-K19"; */
+"znw-jJ-K19.placeholder" = "Şifre";

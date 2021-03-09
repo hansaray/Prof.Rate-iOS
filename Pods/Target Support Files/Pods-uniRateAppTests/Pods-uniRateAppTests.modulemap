@@ -1,0 +1,6 @@
+framework module Pods_uniRateAppTests {
+  umbrella header "Pods-uniRateAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
